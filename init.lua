@@ -52,19 +52,3 @@ vim.api.nvim_create_autocmd("UILeave", {
 	end,
 })
 vim.cmd("colorscheme cyberterm")
-
-vim.lsp.config("clangd", {
-	cmd = { "clangd" },
-	filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
-	root_dir = function(bufnr)
-		return vim.fs.root(bufnr, {
-			".clangd",
-			".clang-tidy",
-			".clang-format",
-			"compile_commands.json",
-			"compile_flags.txt",
-			"configure.ac",
-			".git",
-		})
-	end,
-})
