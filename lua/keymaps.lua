@@ -182,6 +182,7 @@ vim.keymap.set("n", "<leader>ls", ":Leet submit<CR>", opts)
 vim.keymap.set("n", "<leader>lm", ":Leet menu<CR>", opts)
 vim.keymap.set("n", "<leader>ll", ":Leet list<CR>", opts)
 vim.keymap.set("n", "<leader>lc", ":Leet console<CR>", opts)
+vim.keymap.set("n", "<leader>lo", ":Leet open<CR>", opts)
 
 -- Write and quit
 
