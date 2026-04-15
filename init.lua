@@ -51,4 +51,4 @@ vim.api.nvim_create_autocmd("UILeave", {
 		io.write("\027]111\027\\")
 	end,
 })
-vim.cmd("colorscheme nordic_blue_minimal")
+vim.cmd("colorscheme graphite-red")
