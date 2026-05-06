@@ -51,4 +51,5 @@ vim.api.nvim_create_autocmd("UILeave", {
 		io.write("\027]111\027\\")
 	end,
 })
-vim.cmd("colorscheme graphite-red")
+vim.cmd("colorscheme solarized")
+vim.opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50"

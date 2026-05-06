@@ -117,13 +117,13 @@ require("lazy").setup({
 			-- add any options here
 		},
 	},
-	{
-		"windwp/nvim-autopairs",
-		event = "InsertEnter",
-		config = true,
-		-- use opts = {} for passing setup options
-		-- this is equivalent to setup({}) function
-	},
+	-- {
+	-- 	"windwp/nvim-autopairs",
+	-- 	event = "InsertEnter",
+	-- 	config = true,
+	-- 	-- use opts = {} for passing setup options
+	-- 	-- this is equivalent to setup({}) function
+	-- },
 	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -175,7 +175,7 @@ require("lazy").setup({
 		},
 		opts = {
 			-- configuration goes here
-			lang = "python3",
+			lang = "cpp",
 		},
 	},
 
@@ -534,5 +534,8 @@ require("lazy").setup({
 		"catgoose/nvim-colorizer.lua",
 		event = "BufReadPre",
 		opts = {},
+	},
+	{
+		'maxmx03/solarized.nvim'
 	},
 })
