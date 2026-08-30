@@ -1,0 +1,12 @@
+vim.g.mapleader = " "
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+require("plugins")
+require("options")
+require("keymap.buffers")
+require("keymap.netrw_keys")
+require("keymap.neotree-keymaps")
+require("keymap.window-keymaps")
+require("keymap.lsp-keybinds")
+require("keymap.terminal-window")
+require("keymap.telescope-keymaps")
+require("lsp")
