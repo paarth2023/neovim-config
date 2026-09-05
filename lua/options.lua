@@ -50,7 +50,7 @@ require("blink.cmp").setup({
 	},
 })
 opt.background = "dark"
--- vim.cmd('colorscheme catppuccin')
+-- vim.cmd('colorscheme default')
 vim.cmd.colorscheme("catppuccin")
 
 local transparent_groups = {
@@ -109,3 +109,9 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 })
 
 require("nvim-autopairs").setup({});
+
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwSetttings = 1
+vim.g.loaded_netrwFileHandlers = 1
+vim.g.loaded_netrw_gitignore = 1
