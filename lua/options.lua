@@ -20,6 +20,7 @@ require("neo-tree").setup({
 			hide_gitignored = false,
 		},
 	},
+	open_files_do_not_replace_types = { "Trouble", "qf", "edgy" },
 })
 require("blink.cmp").setup({
 	keymap = {
@@ -51,7 +52,7 @@ require("blink.cmp").setup({
 })
 opt.background = "dark"
 -- vim.cmd('colorscheme default')
-vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme("github_light")
 
 local transparent_groups = {
 	-- Main editor

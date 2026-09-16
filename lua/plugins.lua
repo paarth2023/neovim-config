@@ -12,6 +12,7 @@ vim.pack.add({
 	"https://github.com/saghen/blink.lib",
 	"https://github.com/Saghen/blink.cmp",
 	"https://github.com/windwp/nvim-autopairs",
+	{ src = "https://github.com/projekt0n/github-nvim-theme", name = "github-theme" },
 })
 local cmp = require("blink.cmp")
 cmp.build():pwait()
