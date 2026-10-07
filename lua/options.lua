@@ -52,45 +52,7 @@ require("blink.cmp").setup({
 })
 opt.background = "dark"
 -- vim.cmd('colorscheme default')
-vim.cmd.colorscheme("github_light")
-
-local transparent_groups = {
-	-- Main editor
-	"Normal",
-	"NormalNC",
-	"NormalFloat",
-	"EndOfBuffer",
-
-	-- Side columns
-	"SignColumn",
-	"FoldColumn",
-	"LineNr",
-	"CursorLineNr",
-
-	-- Bars
-	"StatusLine",
-	"StatusLineNC",
-	"WinBar",
-	"WinBarNC",
-	"TabLine",
-	"TabLineFill",
-	"TabLineSel",
-
-	-- Window borders / separators
-	"WinSeparator",
-	"VertSplit",
-
-	-- Neo-tree
-	"NeoTreeNormal",
-	"NeoTreeNormalNC",
-	"NeoTreeEndOfBuffer",
-	"NeoTreeFloatNormal",
-	"NeoTreeFloatBorder",
-}
-
-for _, group in ipairs(transparent_groups) do
-	vim.api.nvim_set_hl(0, group, { bg = "none" })
-end
+vim.cmd.colorscheme("dracula")
 
 vim.api.nvim_create_autocmd("BufWritePre", {
 	callback = function(args)
